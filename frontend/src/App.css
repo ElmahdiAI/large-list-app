@@ -1,0 +1,45 @@
+/* frontend/src/App.css */
+.app-container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alphabet-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.alphabet-button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.alphabet-button.active {
+  background-color: #e0e0e0;
+}
+
+.list-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden; /* Ensure virtual scroll works correctly */
+}
+
+.list-item {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
